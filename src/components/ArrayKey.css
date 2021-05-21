@@ -1,0 +1,11 @@
+.key-array .ant-row {
+  justify-content: center;
+}
+
+.hovered-keys.web-dev {
+  color: green;
+}
+
+.hovered-keys.data-sci {
+  color: red;
+}

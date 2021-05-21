@@ -1,0 +1,13 @@
+.download-icons {
+  font-size: xxx-large;
+  position: relative;
+
+  /* bottom: 30px; */
+}
+
+.download-icon {
+  color: rgb(158 107 173);
+}
+.download-icon:hover {
+  color: #40a9ff;
+}

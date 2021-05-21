@@ -1,0 +1,5 @@
+.code-block pre {
+  border: none !important;
+  background: inherit !important;
+  overflow: visible !important;
+}

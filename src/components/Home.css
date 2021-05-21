@@ -1,0 +1,36 @@
+.bottom-row .code-block {
+  width: fit-content;
+  font-size: large;
+  transform: rotate(255deg);
+  position: relative;
+  right: 10%;
+  top: 15%;
+  /* font-size: larger; */
+}
+
+/* code blocks */
+.top-row pre,
+.middle-row pre {
+  text-align: center;
+}
+
+.top-row [class*="language"] {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.top-row h2.ant-typography {
+  margin-bottom: 0;
+}
+
+.top-row {
+  height: 100px;
+}
+
+.middle-row [class*="language"] {
+  padding-top: 0px;
+}
+
+.bottom-row {
+  min-height: 350px;
+}

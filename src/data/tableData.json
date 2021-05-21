@@ -1,0 +1,66 @@
+[
+    {
+        "id": -567523093898807330,
+        "area": "Frontend ",
+        "tech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript ES7",
+            "JQuery",
+            "React",
+            "MaterialUI"
+        ]
+    },
+    {
+        "id": 8626021852532543827,
+        "area": "Backend",
+        "tech": [
+            "Flask",
+            "Django",
+            "Express"
+        ]
+    },
+    {
+        "id": 1864034217496550615,
+        "area": "Databases",
+        "tech": [
+            "SQLite",
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB"
+        ]
+    },
+    {
+        "id": -1071065711885985054,
+        "area": "Data Science ",
+        "tech": [
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "SciPy",
+            "Tensorflow",
+            "Jupyter"
+        ]
+    },
+    {
+        "id": 857582918786406875,
+        "area": "Programming Languages",
+        "tech": [
+            "Python",
+            "Node.js",
+            "Swift"
+        ]
+    },
+    {
+        "id": 8080928161716189862,
+        "area": "Python Packages",
+        "tech": [
+            "SQLAlchemy",
+            "Selenium",
+            "Scrapy",
+            "TkInter",
+            "NLTK"
+        ]
+    }
+]

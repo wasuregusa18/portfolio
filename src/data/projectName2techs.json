@@ -1,0 +1,56 @@
+{
+    "Brand Strength Analysis": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "SciPy",
+        "Tensorflow",
+        "Jupyter"
+    ],
+    "Annual Report Textual Analysis": [
+        "Python",
+        "Pandas",
+        "Matplotlib",
+        "NLTK",
+        "Jupyter"
+    ],
+    "Japanese Poetry Database": [
+        "Python",
+        "Scrapy",
+        "MySQL",
+        "SQLAlchemy"
+    ],
+    "Document Generation Site": [
+        "Python",
+        "Django",
+        "SQLite",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript ES7",
+        "JQuery"
+    ],
+    "Japanese Poetry Website": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "React",
+        "MaterialUI",
+        "HTML",
+        "CSS",
+        "JavaScript ES7",
+        "SQLAlchemy"
+    ],
+    "A Deck of Cards": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "React",
+        "MaterialUI",
+        "HTML",
+        "CSS",
+        "JavaScript ES7",
+        "SQLAlchemy"
+    ]
+}

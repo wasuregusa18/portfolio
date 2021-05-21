@@ -1,0 +1,48 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  /* background-image: url("inkstone.png"); */
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #141414;
+}
+
+.site-header {
+  text-align: center;
+  font-size: 20px;
+}
+
+.header-hovered svg {
+  color: #1890ff;
+}
+
+/* transition doesnt work */
+.inkstone {
+  /* display: table !important; */
+  position: relative;
+  margin-top: 2px;
+  left: 0px;
+  /* transition: left 0.15s cubic-bezier(0.645, 0.045, 0.355, 1); */
+  /* transition: right 2s; */
+  transition: left 0.25s;
+}
+
+.ant-layout-sider-trigger {
+  position: relative !important;
+}
+
+/* next page function */
+.next-page {
+  /* position: relative; */
+  /* right: 60px; */
+  /* bottom: 100px; */
+}
+
+#next-page-icon {
+  font-size: x-large;
+}

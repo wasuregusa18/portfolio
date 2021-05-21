@@ -1,0 +1,148 @@
+{
+    "HTML": [
+        "Document Generation Site",
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "CSS": [
+        "Document Generation Site",
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "Bootstrap": [
+        "Document Generation Site"
+    ],
+    "JavaScript ES7": [
+        "Document Generation Site",
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "JQuery": [
+        "Document Generation Site"
+    ],
+    "React": [
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "MaterialUI": [
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "Flask": [
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "Django": [
+        "Document Generation Site"
+    ],
+    "Express": [],
+    "SQLite": [
+        "Document Generation Site"
+    ],
+    "MySQL": [
+        "Japanese Poetry Database"
+    ],
+    "PostgreSQL": [
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "MongoDB": [],
+    "NumPy": [
+        "Brand Strength Analysis"
+    ],
+    "Pandas": [
+        "Brand Strength Analysis",
+        "Annual Report Textual Analysis"
+    ],
+    "Matplotlib": [
+        "Brand Strength Analysis",
+        "Annual Report Textual Analysis"
+    ],
+    "SciPy": [
+        "Brand Strength Analysis"
+    ],
+    "Tensorflow": [
+        "Brand Strength Analysis"
+    ],
+    "Jupyter": [
+        "Brand Strength Analysis",
+        "Annual Report Textual Analysis"
+    ],
+    "Python": [
+        "Brand Strength Analysis",
+        "Annual Report Textual Analysis",
+        "Japanese Poetry Database",
+        "Document Generation Site",
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "Node.js": [],
+    "Swift": [],
+    "SQLAlchemy": [
+        "Japanese Poetry Database",
+        "Japanese Poetry Website",
+        "A Deck of Cards"
+    ],
+    "Selenium": [],
+    "Scrapy": [
+        "Japanese Poetry Database"
+    ],
+    "TkInter": [],
+    "NLTK": [
+        "Annual Report Textual Analysis"
+    ],
+    "Brand Strength Analysis": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "SciPy",
+        "Tensorflow",
+        "Jupyter"
+    ],
+    "Annual Report Textual Analysis": [
+        "Python",
+        "Pandas",
+        "Matplotlib",
+        "NLTK",
+        "Jupyter"
+    ],
+    "Japanese Poetry Database": [
+        "Python",
+        "Scrapy",
+        "MySQL",
+        "SQLAlchemy"
+    ],
+    "Document Generation Site": [
+        "Python",
+        "Django",
+        "SQLite",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript ES7",
+        "JQuery"
+    ],
+    "Japanese Poetry Website": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "React",
+        "MaterialUI",
+        "HTML",
+        "CSS",
+        "JavaScript ES7",
+        "SQLAlchemy"
+    ],
+    "A Deck of Cards": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "React",
+        "MaterialUI",
+        "HTML",
+        "CSS",
+        "JavaScript ES7",
+        "SQLAlchemy"
+    ]
+}

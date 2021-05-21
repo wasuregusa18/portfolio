@@ -1,0 +1,30 @@
+{
+    "Data Collection & Analysis": [
+        {
+            "id": 0,
+            "name": "Brand Strength Analysis"
+        },
+        {
+            "id": 1,
+            "name": "Annual Report Textual Analysis"
+        },
+        {
+            "id": 2,
+            "name": "Japanese Poetry Database"
+        }
+    ],
+    "Web Development": [
+        {
+            "id": 3,
+            "name": "Document Generation Site"
+        },
+        {
+            "id": 4,
+            "name": "Japanese Poetry Website"
+        },
+        {
+            "id": 5,
+            "name": "A Deck of Cards"
+        }
+    ]
+}

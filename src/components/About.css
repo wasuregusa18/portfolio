@@ -1,0 +1,22 @@
+.code-row .code-block {
+  font-size: large;
+  min-height: 310px;
+  min-width: 310px;
+}
+
+.top-row pre {
+  border: none;
+}
+
+.top-row [class*="language"] {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.top-row h2.ant-typography {
+  margin-bottom: 0;
+}
+
+.code-row [class*="language"] {
+  padding-top: 0px;
+}

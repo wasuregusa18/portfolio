@@ -1,0 +1,116 @@
+[
+    {
+        "id": 0,
+        "name": "Brand Strength Analysis",
+        "objective": "Objective: to build an informative model of company brand strength from non-financial indicators. ",
+        "implementation": "Implementation: the model incorporated google trends data, as well as sentiment data mined from across popular social media websites (e.g. Instagram, Twitter). The relative predictive strength was evaluated by comparisons to publicly available financial data (revenue, e-commerce/direct-to-consumer sales, share price, etc\u2026). Based on this analysis, different baskets of data were designed to track different elements of brand strength. ",
+        "methodology": "unpack the various components of brand strength\ngather data that appeared meaningfully connected to those components\napply regression analysis and other tools to investigate predictive power on real financial data\nexperiment with different combinations and transformations \ncombine the above results into a simple, but informative model of company brand strength",
+        "tech": [
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "SciPy",
+            "Tensorflow",
+            "Jupyter"
+        ],
+        "media": null,
+        "link": null,
+        "grouping": "Data Collection & Analysis"
+    },
+    {
+        "id": 1,
+        "name": "Annual Report Textual Analysis",
+        "objective": "Objective: design and build software to extract and analyze textual content of company 10-K filings.",
+        "implementation": "Implementation: the program accepts an excel spreadsheet with a list of company names (100+) and a range of years (e.g. 2012-2018). It outputs a spreadsheet with corresponding analysis on the text of a company\u2019s annual filings. Targeted sections include Legal Proceedings, Risk Analysis, etc\u2026 Outputted analysis includes length, sentiment, key words, most common proper names.",
+        "methodology": "Pipeline design (to minimize burden on website)\nLookup company CIK\nExtract company 10-K filings for date range\nParse out target sections\nAnalyze those sections\nPopulate pandas data frame with results\nRepeat for all companies\nFinally email completed excel spreadsheet",
+        "tech": [
+            "Python",
+            "Pandas",
+            "Matplotlib",
+            "NLTK",
+            "Jupyter"
+        ],
+        "media": ["lady-img.jpg"],
+        "link": null,
+        "grouping": "Data Collection & Analysis"
+    },
+    {
+        "id": 2,
+        "name": "Japanese Poetry Database",
+        "objective": "Objective: to build a database of Japanese waka poems, poets and collections from publicly available online sources",
+        "implementation": "Implementation: web crawlers traverse target websites, the data is cleaned and standardized, before being committed to a MySQL database.",
+        "methodology": "Design database schema \nIdentify target websites\nBuild spiders to crawl those sites\nClean and standardize recovered data\nCommit the cleaned data into database",
+        "tech": [
+            "Python",
+            "Scrapy",
+            "MySQL",
+            "SQLAlchemy"
+        ],
+        "media": ["logo192.png"],
+        "link": "ND",
+        "grouping": "Data Collection & Analysis"
+    },
+    {
+        "id": 3,
+        "name": "Document Generation Site",
+        "objective": "Objective: to build a site that allowed customer registration and automated data entry for sales team.",
+        "implementation": "Implementation: customers register their data via a simple form, which checks its validity before saving it into an SQLite database. Staff upload form templates (excel spreadsheet etc\u2026)  combined with a mapping (e.g. customer full address in cell C1). Staff can then download forms with customer data populated from the database.",
+        "methodology": "Outline url endpoints and corresponding functionality\nBuild models for customers and form templates\nBuild customer-side: registration form, edit/delete form\nBuild staff-side: login, template upload form, download page\nBuild automated data entry endpoint and completed form download endpoint\nStylize frontend with bootstrap",
+        "tech": [
+            "Python",
+            "Django",
+            "SQLite",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript ES7",
+            "JQuery"
+        ],
+        "media": ["test.mp4"],
+        "link": "ND",
+        "grouping": "Web Development"
+    },
+    {
+        "id": 4,
+        "name": "Japanese Poetry Website",
+        "objective": "Objective: to create a website that allowed users to make complex queries of the poetry, poet, collection databases in an intuitive and appealing manner (with a corresponding API for advanced users). ",
+        "implementation": "Implementation: the website centers around a single, universal search bar.  As the user starts typing, the input is immediately checked against possible filters (e.g. by poet, by collection, etc\u2026); matching filters are presented to the user below the search bar. The user can then either click the filter to apply it to the search or, if there is a corresponding end page (e.g. for poets), the user can click through. In this way, users can make complicated and-or queries. For example, return the poems that contain the word \u201cspring\u201d, included in the \u201cKokinwakashu\u201d collection, written by either \u201cNarihira\u201d or \u201cTsurayuki\u201d. There is a corresponding API that returns results in JSON format. ",
+        "methodology": "Convert waka database to PostgreSQL\nReorganize database schema to optimize search speed and make compatible with heroku\u2019s free database plan\nDesign Search Schema\nBuild API Endpoints\nBuild client-facing HTML endpoints\nDesign and Implement React Frontend \nStyle the website with MaterialUI ",
+        "tech": [
+            "Python",
+            "Flask",
+            "PostgreSQL",
+            "React",
+            "MaterialUI",
+            "HTML",
+            "CSS",
+            "JavaScript ES7",
+            "SQLAlchemy"
+        ],
+        "media": null,
+        "link": "https://waka-stage.herokuapp.com",
+        "grouping": "Web Development"
+    },
+    {
+        "id": 5,
+        "name": "A Deck of Cards",
+        "objective": "Objective: build a website that allows users to play any card game in existence (virtual deck of cards)",
+        "implementation": "Design: players input basic constraint set (e.g. num of players, starting set up, turn-based or not etc\u2026). They can save these rules under a name of their choice. Disagreements over game rules are settled by majority vote. Ultimately, the ambition is to have a machine learning algorithm on the backend learn the rules of the game from watching people play. Once the algorithm gains confidence, it will start enforcing the rules (e.g. turn end on played card, preempt mistaken card, register end of game, etc\u2026). In this way, players will program the website to learn their game. ",
+        "methodology": "In Development",
+        "tech": [
+            "Python",
+            "Flask",
+            "PostgreSQL",
+            "React",
+            "MaterialUI",
+            "HTML",
+            "CSS",
+            "JavaScript ES7",
+            "SQLAlchemy"
+        ],
+        "media": null,
+        "link": "UD",
+        "grouping": "Web Development"
+    }
+]

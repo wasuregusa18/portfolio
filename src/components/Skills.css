@@ -1,0 +1,15 @@
+#skills .tableEntry {
+  cursor: default;
+}
+#skills .tableEntry:active {
+  background-color: inherit;
+  color: inherit;
+}
+
+#skills .ant-table {
+  font-size: larger;
+}
+
+.ant-table .ant-tag {
+  font-size: small;
+}

@@ -1,0 +1,26 @@
+.project {
+  font-size: 14px;
+  padding: 0;
+}
+
+/* line up with text or with edge of table */
+.project-array {
+  padding-left: 16px;
+}
+
+/* project keys */
+.ant-tag.key {
+  font-size: small;
+}
+
+/* project header */
+.project-array .ant-list-header {
+  font-size: large;
+}
+/* projects */
+.ant-tag-checkable.project {
+  font-size: medium;
+}
+.project-array .ant-row {
+  padding-top: 10px;
+}

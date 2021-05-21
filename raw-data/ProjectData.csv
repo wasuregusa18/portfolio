@@ -1,0 +1,36 @@
+id,name,objective,implementation,methodology,tech,media,link,grouping
+0,Brand Strength Analysis,Objective: to build an informative model of company brand strength from non-financial indicators. ,"Implementation: the model incorporated google trends data, as well as sentiment data mined from across popular social media websites (e.g. Instagram, Twitter). The relative predictive strength was evaluated by comparisons to publicly available financial data (revenue, e-commerce/direct-to-consumer sales, share price, etc…). Based on this analysis, different baskets of data were designed to track different elements of brand strength. ","unpack the various components of brand strength
+gather data that appeared meaningfully connected to those components
+apply regression analysis and other tools to investigate predictive power on real financial data
+experiment with different combinations and transformations 
+combine the above results into a simple, but informative model of company brand strength",Python-NumPy-Pandas-Matplotlib-SciPy-Tensorflow-Jupyter,,,Data Collection & Analysis
+1,Annual Report Textual Analysis,Objective: design and build software to extract and analyze textual content of company 10-K filings.,"Implementation: the program accepts an excel spreadsheet with a list of company names (100+) and a range of years (e.g. 2012-2018). It outputs a spreadsheet with corresponding analysis on the text of a company’s annual filings. Targeted sections include Legal Proceedings, Risk Analysis, etc… Outputted analysis includes length, sentiment, key words, most common proper names.","Pipeline design (to minimize burden on website)
+Lookup company CIK
+Extract company 10-K filings for date range
+Parse out target sections
+Analyze those sections
+Populate pandas data frame with results
+Repeat for all companies
+Finally email completed excel spreadsheet",Python-Pandas-Matplotlib-NLTK-Jupyter,,,Data Collection & Analysis
+2,Japanese Poetry Database,"Objective: to build a database of Japanese waka poems, poets and collections from publicly available online sources","Implementation: web crawlers traverse target websites, the data is cleaned and standardized, before being committed to a MySQL database.","Design database schema 
+Identify target websites
+Build spiders to crawl those sites
+Clean and standardize recovered data
+Commit the cleaned data into database",Python-Scrapy-MySQL-SQLAlchemy,,,Data Collection & Analysis
+3,Document Generation Site,Objective: to build a site that allowed customer registration and automated data entry for sales team.,"Implementation: customers register their data via a simple form, which checks its validity before saving it into an SQLite database. Staff upload form templates (excel spreadsheet etc…)  combined with a mapping (e.g. customer full address in cell C1). Staff can then download forms with customer data populated from the database.","Outline url endpoints and corresponding functionality
+Build models for customers and form templates
+Build customer-side: registration form, edit/delete form
+Build staff-side: login, template upload form, download page
+Build automated data entry endpoint and completed form download endpoint
+Stylize frontend with bootstrap
+Add localization model properties (e.g. address in Japanese) and convenience features (e.g. today’s date)",Python-Django-SQLite-HTML-CSS-Bootstrap-JavaScript ES7-JQuery,,,Web Development
+4,Japanese Poetry Website,"Objective: to create a website that allowed users to make complex queries of the poetry, poet, collection databases in an intuitive and appealing manner (with a corresponding API for advanced users). ","Implementation: the website centers around a single, universal search bar.  As the user starts typing, the input is immediately checked against possible filters (e.g. by poet, by collection, etc…); matching filters are presented to the user below the search bar. The user can then either click the filter to apply it to the search or, if there is a corresponding end page (e.g. for poets), the user can click through. In this way, users can make complicated and-or queries. For example, return the poems that contain the word “spring”, included in the “Kokinwakashu” collection, written by either “Narihira” or “Tsurayuki”. There is a corresponding API that returns results in JSON format. ","Convert waka database to PostgreSQL
+Reorganize database schema to optimize search speed and make compatible with heroku’s free database plan
+Design Search Schema
+Build API Endpoints
+Build client-facing HTML endpoints
+Design and Implement React Frontend 
+Style the website with MaterialUI ",Python-Flask-PostgreSQL-React-MaterialUI-HTML-CSS-JavaScript ES7-SQLAlchemy,,,Web Development
+5,A Deck of Cards,Objective: build a website that allows users to play any card game in existence (virtual deck of cards),"Design: players input basic constraint set (e.g. num of players, starting set up, turn-based or not etc…). They can save these rules under a name of their choice. Disagreements over game rules are settled by majority vote. Ultimately, the ambition is to have a machine learning algorithm on the backend learn the rules of the game from watching people play. Once the algorithm gains confidence, it will start enforcing the rules (e.g. turn end on played card, preempt mistaken card, register end of game, etc…). In this way, players will program the website to learn their game. ",In Development,Python-Flask-PostgreSQL-React-MaterialUI-HTML-CSS-JavaScript ES7-SQLAlchemy,,,Web Development
+6,,,,,,,,
+7,,,,,,,,

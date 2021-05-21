@@ -1,0 +1,24 @@
+/* for homepage */
+/* .bottom-row .quill {
+  height: 400px;
+  width: 200px;
+  position: relative;
+  bottom: 200px;
+} */
+
+.top-row .quill {
+  height: 400px;
+  width: 200px;
+  overflow: visible;
+  /* position: absolute;
+  top: 23px;
+  right: 11%; */
+}
+
+/* for about page */
+/* #about .quill {
+  height: 400px;
+  width: 200px;
+  position: relative;
+  bottom: 65px;
+} */
