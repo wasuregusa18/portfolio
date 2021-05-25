@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { List, Tag } from "antd";
-import { CompassOutlined, DatabaseOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 
 import ArrayKey, { keyData } from "./ArrayKey";

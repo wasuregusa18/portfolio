@@ -113,8 +113,10 @@ const Framework = (props) => {
         </Header> */}
         <Content style={{ margin: "0 16px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
-            {breadcrumbData.map((x) => {
-              if (x !== "Home") return <Breadcrumb.Item>{x}</Breadcrumb.Item>;
+            {breadcrumbData.map((x, index) => {
+              if (x !== "Home")
+                return <Breadcrumb.Item key={index}>{x}</Breadcrumb.Item>;
+              else return null;
             })}
           </Breadcrumb>
           <div

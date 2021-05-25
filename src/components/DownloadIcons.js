@@ -13,8 +13,8 @@ const DownloadIcons = () => {
   return (
     <div className="download-icons">
       <Row gutter={50}>
-        {variants.map((item) => (
-          <Col>
+        {variants.map((item, index) => (
+          <Col key={index}>
             <Tooltip title={item.text}>
               <a className="download-icon" download href={item.path}>
                 {item.icon}

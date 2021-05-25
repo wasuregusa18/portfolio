@@ -15,7 +15,6 @@ const keyData = {
 
 const ArrayKey = (props) => {
   const iconClass = props.keysHovered ? "hovered-keys" : null;
-  console.log(iconClass, props.keysHovered);
   return (
     <List
       className="key-array"

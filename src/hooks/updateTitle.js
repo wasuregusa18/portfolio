@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const useUpdateTitle = (title) => {
-  console.log("hook");
   useEffect(() => (document.title = title), [title]);
 };
 

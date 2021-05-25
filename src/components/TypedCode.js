@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import Code from "./Code";
 import "./TypedCode.css";
@@ -7,6 +7,7 @@ import "./TypedCode.css";
 //onFinish will get sent a true value when code is finished typing
 const TypedCode = ({ onFinish, code, language, interrupt }) => {
   const [text, setText] = useState("");
+  let timeoutRef = useRef();
 
   useEffect(() => {
     function slowlyType(index = 0, time = 50) {
@@ -14,7 +15,7 @@ const TypedCode = ({ onFinish, code, language, interrupt }) => {
         setText(code);
         if (onFinish) onFinish(true);
       } else {
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setText((preVal) => `${preVal}${code[index]}`);
           slowlyType(index + 1);
         }, time);
@@ -22,7 +23,9 @@ const TypedCode = ({ onFinish, code, language, interrupt }) => {
     }
     slowlyType();
     return () => {
+      clearTimeout(timeoutRef.current);
       if (interrupt.current) interrupt.current = true;
+      if (onFinish) onFinish(true);
     };
   }, [onFinish, code, interrupt]);
   return (

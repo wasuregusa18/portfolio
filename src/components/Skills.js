@@ -28,11 +28,11 @@ const SkillsTable = (props) => {
       dataIndex: "tech",
       key: "tech",
       render: (tags) =>
-        tags.map((tag) => (
+        tags.map((tag, index) => (
           <CheckableTag
             className="tableEntry"
             checked={isHighlighted.indexOf(tag) > -1}
-            key={tag}
+            key={index}
           >
             {tag.toUpperCase()}
           </CheckableTag>
@@ -48,6 +48,7 @@ const SkillsTable = (props) => {
         dataSource={tableData}
         columns={columns}
         pagination={false}
+        rowKey="id"
       />
     </section>
   );

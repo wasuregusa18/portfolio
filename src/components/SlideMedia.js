@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Image } from "antd";
+import { Image } from "antd";
 
 const isImageFile = (filename) => {
   const isImage = /\.(gif|jpe?g|tiff?|png|webp|bmp)$/i.test(filename);
@@ -17,11 +17,12 @@ const style = {
 // need to be in public folder for src to work
 const SlideMedia = ({ media }) => {
   const content = (props) =>
-    media.map((filename) => {
+    media.map((filename, index) => {
       if (isImageFile(filename))
         return (
           <Image
             {...props}
+            key={index}
             className="slide-image"
             src={`${filename}`}
             alt="ProjectImage"
@@ -32,6 +33,7 @@ const SlideMedia = ({ media }) => {
           <video
             {...props}
             controls
+            key={index}
             className="slide-video"
             src={`${filename}`}
             alt="ProjectVideo"

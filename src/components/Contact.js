@@ -55,8 +55,8 @@ const Contact = ({ isModalVisible, handleModalExit }) => {
         gutter={[12, 24]}
         style={{ fontSize: "xxx-large" }}
       >
-        {icons.map((i) => (
-          <Col>
+        {icons.map((i, index) => (
+          <Col key={index}>
             <ContactIcon variant={i} />
           </Col>
         ))}

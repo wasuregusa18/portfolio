@@ -30,9 +30,7 @@ const LinkArray = ({ media, link, source }) => {
   return (
     <Row justify="space-around" gutter={12} style={{ fontSize: "x-large" }}>
       {links.slice(1).map((l, i) => {
-        console.log(l);
         let [toShow, title] = shouldShow(l);
-        console.log(toShow, title);
         const button = (
           <Button
             href={l}
@@ -45,7 +43,7 @@ const LinkArray = ({ media, link, source }) => {
           </Button>
         );
         return (
-          <Col>
+          <Col key={i}>
             {!toShow && l ? (
               <Tooltip title={title} placement="bottom">
                 <span>{button}</span>

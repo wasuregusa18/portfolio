@@ -22,12 +22,15 @@ const delays = { name: "0ms", tag: "750ms", img: "1500ms", code: "2250ms" };
 const Home = () => {
   const [toHighlight, setHighlight] = useState(false);
   let [finishedAnimating, setAnimate] = useState(false);
-  console.log(finishedAnimating);
 
   // disallow hovering until animation finished - and flash hover once
   useEffect(() => {
-    setTimeout(() => setAnimate(true), 5000);
-    setTimeout(() => setHighlight(true), 3300);
+    let animate = setTimeout(() => setAnimate(true), 5000);
+    let highlight = setTimeout(() => setHighlight(true), 3300);
+    return () => {
+      clearTimeout(animate);
+      clearTimeout(highlight);
+    };
   }, [setAnimate, setHighlight]);
 
   return (

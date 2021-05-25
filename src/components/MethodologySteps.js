@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Steps } from "antd";
 
 const { Step } = Steps;
@@ -9,6 +9,7 @@ const MethodologySteps = ({
   direction = "vertical",
 }) => {
   const [currentStep, setStep] = useState(0);
+  const timeoutRef = useRef();
 
   useEffect(() => {
     //reset when slide not visible
@@ -18,17 +19,18 @@ const MethodologySteps = ({
       const moveNextStep = (count = 0) => {
         if (count < methArray.length) {
           setStep((preVal) => ++preVal);
-          setTimeout(() => moveNextStep(++count), 1000);
+          timeoutRef.current = setTimeout(() => moveNextStep(++count), 1000);
         }
       };
       moveNextStep();
+      return () => clearTimeout(timeoutRef.current);
     }
   }, [isVisible, methArray.length]);
 
   return (
     <Steps progressDot current={currentStep} direction={direction}>
-      {methArray.map((item) => (
-        <Step title={item} />
+      {methArray.map((item, index) => (
+        <Step title={item} key={index} />
       ))}
     </Steps>
   );

@@ -1,3 +1,11 @@
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
 import Framework from "./components/Framework";
 import SkillsTable from "./components/Skills";
 import Projects from "./components/Projects";
@@ -5,14 +13,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 import NextPage from "./components/NextPage";
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
-import React, { useState, useRef } from "react";
 
 import "./App.css";
 
