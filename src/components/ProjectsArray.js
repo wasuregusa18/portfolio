@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { List, Tag } from "antd";
-import ArrayKey from "./ArrayKey";
-import "./ProjectsArray.css";
 import { CompassOutlined, DatabaseOutlined } from "@ant-design/icons";
-
 import { useHistory } from "react-router-dom";
 
-import projectName2techs from "../data/projectName2techs.json";
+import ArrayKey, { keyData } from "./ArrayKey";
+import "./ProjectsArray.css";
+
 import project2grouping from "../data/project2grouping.json";
 import project2index from "../data/project2index.json";
 
 const { CheckableTag } = Tag;
-const data = Object.keys(projectName2techs);
+const data = Object.keys(project2grouping);
 
 const ProjectArray = (props) => {
   const [keysHovered, setKeysHovered] = useState(false);
@@ -44,14 +43,10 @@ const ProjectArray = (props) => {
               props.handleHover(event.target?.innerText?.trim())
             }
             onMouseOut={(event) => props.handleHover("")}
+            key={item}
           >
-            <CheckableTag className="project" onClick={handleClick} key={item}>
-              {project2grouping[item] === "Web Development" ? (
-                <CompassOutlined className={"web-dev " + iconClass} />
-              ) : (
-                <DatabaseOutlined className={"data-sci " + iconClass} />
-              )}{" "}
-              {item}
+            <CheckableTag className="project" onClick={handleClick}>
+              {keyData[project2grouping[item]](iconClass)} {item}
             </CheckableTag>
           </List.Item>
         )}

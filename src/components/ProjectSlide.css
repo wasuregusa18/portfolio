@@ -39,51 +39,9 @@
   font-size: 12px !important;
 }
 
-.close-expanded {
-  display: inline;
-  color: #1890ff;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  transition: color 0.3s;
-  /* float: right; */
-  margin-left: 4px;
-  background: none !important;
-  border: none;
-  padding: 0 !important;
+.content-container {
+  height: 100%;
+  margin: 0 40px;
+  color: black;
+  overflow: hidden;
 }
-
-.close-expanded:hover {
-  color: #40a9ff;
-}
-
-/* .slick-dots li button:before {
-  font-size: 20px !important;
-  line-height: 20px !important;
-  color: black !important;
-} */
-
-/* .layout-header,
-.layout-footer {
-  color: #fff;
-  background: #7dbcea;
-}
-[data-theme="dark"] .ant-layout-header {
-  background: #6aa0c7;
-}
-[data-theme="dark"] .ant-layout-footer {
-  background: #6aa0c7;
-}
-.layout-footer {
-  line-height: 1.5;
-}
-
-.layout-content {
-  min-height: 120px;
-  color: #fff;
-  line-height: 120px;
-  background: rgba(16, 142, 233, 1);
-}
-[data-theme="dark"] .ant-layout-content {
-  background: #107bcb;
-} */

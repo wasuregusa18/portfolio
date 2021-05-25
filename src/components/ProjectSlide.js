@@ -1,22 +1,22 @@
-import React, { useState, useCallback } from "react";
-import SlideMedia from "./SlideMedia";
-import TechList from "./TechList";
-import MethodologySteps from "./MethodologySteps";
-import LinkArray from "./LinkArray";
+import React from "react";
+import { Layout, Row, Col, Typography, Divider } from "antd";
 import {
   CompassOutlined,
   DatabaseOutlined,
   AimOutlined,
-  BarsOutlined,
   ControlOutlined,
-  DeliveredProcedureOutlined,
   NodeIndexOutlined,
 } from "@ant-design/icons";
+
+import SlideMedia from "./SlideMedia";
+import TechList from "./TechList";
+import MethodologySteps from "./MethodologySteps";
+import LinkArray from "./LinkArray";
+import CollapsableParagraph from "./CollapsableParagraph";
 import "./ProjectSlide.css";
 
-import { Layout, Row, Col, Typography, Divider } from "antd";
-const { Header, Footer, Content } = Layout;
-const { Title, Text, Paragraph } = Typography;
+const { Header, Content } = Layout;
+const { Paragraph } = Typography;
 
 const ellipsisSetting = {
   media: {
@@ -24,33 +24,6 @@ const ellipsisSetting = {
     expandable: true,
   },
   noMedia: { rows: 6, expandable: true },
-};
-
-const CollapsableParagraph = ({ text, settings }) => {
-  const [expanded, setExpanded] = useState(false);
-  const [key, setKey] = useState(0);
-  let newSettings = {
-    ...settings,
-    onExpand: () => {
-      setExpanded(true);
-    },
-  };
-  const onClose = () => {
-    setKey((preVal) => ++preVal % 2);
-    setExpanded(false);
-  };
-  return (
-    <>
-      <Paragraph ellipsis={newSettings} key={key}>
-        {text}
-        {expanded && (
-          <button className="close-expanded" onClick={onClose}>
-            Close
-          </button>
-        )}
-      </Paragraph>
-    </>
-  );
 };
 
 const ContentImage = ({
@@ -77,9 +50,6 @@ const ContentImage = ({
             settings={ellipsisSetting.media}
           />
         </Col>
-        {/* <Col span={12} style={{ position: "relative", textAlign: "center" }}> */}
-
-        {/* </Col> */}
       </Row>
       <Row>
         <Col style={{ width: "95%", overflow: "hidden" }}>
@@ -157,32 +127,15 @@ const ProjectSlideWrapper = ({ project, isVisible }) => {
     media: media,
   };
   return (
-    <Layout
-      className="project-slide"
-      // style={{ }}
-    >
+    <Layout className="project-slide">
       <Header className="layout-header">
         <h3>
           {iconLookup[grouping]} {name}
         </h3>
       </Header>
       <Content className="layout-content">
-        <div
-          style={{
-            height: "100%",
-            margin: "0 40px",
-            color: "black",
-            overflow: "hidden",
-          }}
-        >
-          <h3
-            style={{
-              height: "5%",
-            }}
-          >
-            {/* {project.objective} */}
-          </h3>
-
+        <div className="content-container">
+          <div style={{ height: "5%" }} />
           {media ? (
             <ContentImage {...contentProps} />
           ) : (
@@ -193,9 +146,6 @@ const ProjectSlideWrapper = ({ project, isVisible }) => {
           <LinkArray link={link} source={source} media={media} />
         </div>
       </Content>
-      {/* <Footer className="layout-footer">
-        <TechList tech={tech} />
-      </Footer> */}
     </Layout>
   );
 };

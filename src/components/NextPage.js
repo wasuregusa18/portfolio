@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { Fade } from "@material-ui/core";
 import { Button, Tooltip } from "antd";
+import { useHistory } from "react-router-dom";
 import {
   DownSquareTwoTone,
   UpSquareTwoTone,
   MobileOutlined,
 } from "@ant-design/icons";
-import { useHistory } from "react-router-dom";
+import { Fade } from "@material-ui/core";
 
+const iconProps = { twoToneColor: "#0000", id: "next-page-icon" };
 const standardViews = ["home", "about", "skills", "projects"];
 const delayTime = {
-  home: "500ms",
-  about: "5000ms",
-  skills: "500ms",
-  projects: "500ms",
+  home: "4500ms",
+  about: "11000ms",
+  skills: "1000ms",
+  projects: "1000ms",
 };
-const iconProps = { twoToneColor: "#0000", id: "next-page-icon" };
 
 function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -28,7 +28,6 @@ const NextPage = ({
   modalVisible,
 }) => {
   const history = useHistory();
-  //can use ref because modal exit will change menu selected (so will get rerendered)
   const [contactSeen, setSeen] = useState(false);
 
   const currentPage =
@@ -56,6 +55,15 @@ const NextPage = ({
       history.push(newView);
     }
   };
+
+  const button = (
+    <Button
+      className="next-page"
+      type="default"
+      onClick={nextPage}
+      icon={whichData.icon}
+    />
+  );
   if (!currentPage) return null;
   return (
     <>
@@ -66,27 +74,11 @@ const NextPage = ({
       >
         <p style={{ textAlign: "right" }}>
           {!modalVisible ? (
-            <Tooltip
-              // visible={!modalVisible}
-              title={capitalize(whichData.text)}
-              placement="bottom"
-            >
-              <Button
-                //   key={contactSeen ? 0 : 1}
-                className="next-page"
-                type="default"
-                onClick={nextPage}
-                icon={whichData.icon}
-              />
+            <Tooltip title={capitalize(whichData.text)} placement="bottom">
+              {button}
             </Tooltip>
           ) : (
-            <Button
-              //   key={contactSeen ? 0 : 1}
-              className="next-page"
-              type="default"
-              onClick={nextPage}
-              icon={whichData.icon}
-            />
+            button
           )}
         </p>
       </Fade>

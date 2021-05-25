@@ -9,30 +9,16 @@ const MethodologySteps = ({
   direction = "vertical",
 }) => {
   const [currentStep, setStep] = useState(0);
-  //   const count = useRef(1);
-  //   useEffect(() => {
-  //     function animate(count = 1, time = 50000) {
-  //       console.log("ticking");
-  //       if (count < methArray.length) {
-  //         setStep((preVal) => ++preVal);
-  //         setTimeout(animate(++count), time);
-  //       }
-  //     }
-  //     animate();
-  //   }, []);
 
-  const count = useRef(0);
   useEffect(() => {
-    //reset
+    //reset when slide not visible
     if (!isVisible) {
       setStep(0);
-      count.current = 0;
     } else {
-      const moveNextStep = () => {
-        if (count.current < methArray.length) {
-          count.current++;
+      const moveNextStep = (count = 0) => {
+        if (count < methArray.length) {
           setStep((preVal) => ++preVal);
-          setTimeout(moveNextStep, 1000);
+          setTimeout(() => moveNextStep(++count), 1000);
         }
       };
       moveNextStep();

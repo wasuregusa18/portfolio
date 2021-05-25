@@ -4,16 +4,14 @@ import { CompassOutlined, DatabaseOutlined } from "@ant-design/icons";
 
 import "./ArrayKey.css";
 
-const data = [
-  {
-    icon: (clss) => <DatabaseOutlined className={"data-sci " + clss} />,
-    tag: "Data Science",
-  },
-  {
-    icon: (clss) => <CompassOutlined className={"web-dev " + clss} />,
-    tag: "Web Development",
-  },
-];
+const keyData = {
+  "Data Collection & Analysis": (clss) => (
+    <DatabaseOutlined className={"data-sci " + clss} />
+  ),
+  "Web Development": (clss) => (
+    <CompassOutlined className={"web-dev " + clss} />
+  ),
+};
 
 const ArrayKey = (props) => {
   const iconClass = props.keysHovered ? "hovered-keys" : null;
@@ -25,14 +23,15 @@ const ArrayKey = (props) => {
         gutter: 16,
         xs: 2,
       }}
-      dataSource={data}
-      renderItem={(item) => (
+      dataSource={Object.entries(keyData)}
+      renderItem={([tag, icon]) => (
         <List.Item
           onMouseOver={() => props.setKeysHovered(true)}
           onMouseOut={() => props.setKeysHovered(false)}
+          key={tag}
         >
-          <Tag className="key" key={item.tag}>
-            {item.icon(iconClass)} = {item.tag}
+          <Tag className="key">
+            {icon(iconClass)} = {tag}
           </Tag>
         </List.Item>
       )}
@@ -41,3 +40,4 @@ const ArrayKey = (props) => {
 };
 
 export default ArrayKey;
+export { keyData };

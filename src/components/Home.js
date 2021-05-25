@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col, Typography } from "antd";
 import { Fade } from "@material-ui/core";
 
@@ -14,7 +14,6 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, World!'`;
-
 const notALanguage = "";
 const codeName = `<ChristopherHuber />`;
 const fadeInTime = 750;
@@ -22,7 +21,6 @@ const delays = { name: "0ms", tag: "750ms", img: "1500ms", code: "2250ms" };
 
 const Home = () => {
   const [toHighlight, setHighlight] = useState(false);
-  // const handleHover = () => setHighlight((preVal) => !preVal);
   let [finishedAnimating, setAnimate] = useState(false);
   console.log(finishedAnimating);
 
@@ -33,18 +31,12 @@ const Home = () => {
   }, [setAnimate, setHighlight]);
 
   return (
-    <div>
+    <>
       <Row style={{ height: "50px" }}></Row>
       <div
+        className="hover-box"
         onMouseEnter={() => finishedAnimating && setHighlight(true)}
         onMouseLeave={() => finishedAnimating && setHighlight(false)}
-        style={{
-          position: "absolute",
-          // margin: auto
-          zIndex: 100,
-          height: "200px",
-          width: "100%",
-        }}
       />
       <Row justify="center" className="top-row">
         <Fade in={true} timeout={fadeInTime}>
@@ -94,7 +86,6 @@ const Home = () => {
         in={true}
         style={{ transitionDelay: delays.code }}
         timeout={fadeInTime}
-        // onEntered={() => setTimeout(() => setAnimate(true), 500)}
       >
         <Row
           style={{ height: "50%" }}
@@ -110,8 +101,7 @@ const Home = () => {
           <Col span={6}></Col>
         </Row>
       </Fade>
-    </div>
-    // </Animate>
+    </>
   );
 };
 

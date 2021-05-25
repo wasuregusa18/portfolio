@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+
 import Code from "./Code";
 import "./TypedCode.css";
 
@@ -25,12 +26,7 @@ const TypedCode = ({ onFinish, code, language, interrupt }) => {
     };
   }, [onFinish, code, interrupt]);
   return (
-    <div
-    // onDoubleClick={() => {
-    //   interrupt.current = true;
-    //   onFinish();
-    // }}
-    >
+    <div className="typed-code">
       <Code code={text} language={language} />
     </div>
   );

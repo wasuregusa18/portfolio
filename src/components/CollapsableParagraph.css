@@ -1,0 +1,17 @@
+.close-expanded {
+  display: inline;
+  color: #1890ff;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  /* float: right; */
+  margin-left: 4px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+}
+
+.close-expanded:hover {
+  color: #40a9ff;
+}

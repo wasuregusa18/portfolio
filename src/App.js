@@ -17,14 +17,14 @@ import React, { useState, useRef } from "react";
 import "./App.css";
 
 function App() {
-  let path = window.location.pathname.slice(1);
+  let path = window.location.pathname.slice(1 + 10); //when hosted on /portfolio
   path = path === "" ? "home" : path;
   const [carouselShowing, setCarousel] = useState(0);
   const [menuSelected, setSelected] = useState([path]);
   const [modalVisible, setModalVisible] = useState(false); //Contact me Modal
 
   return (
-    <Router>
+    <Router basename="/portfolio/">
       <Framework
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}

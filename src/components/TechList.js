@@ -1,12 +1,13 @@
 import React from "react";
 import { List, Tag } from "antd";
+
 import "./TechList.css";
+
 const { CheckableTag } = Tag;
 
 const TechList = ({ tech }) => (
   <List
     grid={{
-      //   gutter: 1,
       xs: 1,
       sm: 4,
       md: 6,

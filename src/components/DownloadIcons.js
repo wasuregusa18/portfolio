@@ -1,32 +1,22 @@
 import React from "react";
+import { Tooltip, Col, Row } from "antd";
+import { MailOutlined, SolutionOutlined } from "@ant-design/icons";
 
-import { List, Tooltip, Col, Row, Button } from "antd";
 import "./DownloadIcons.css";
 
-import {
-  MailOutlined,
-  RadarChartOutlined,
-  SolutionOutlined,
-} from "@ant-design/icons";
-
-{
-  /* <FileTextOutlined /> */
-  // <SolutionOutlined />
-}
-
-const data = [
-  { icon: <MailOutlined />, text: "Cover Letter" },
-  { icon: <SolutionOutlined />, text: "Resume" },
+const variants = [
+  { icon: <MailOutlined />, text: "Cover Letter", path: "cover-letter.pdf" },
+  { icon: <SolutionOutlined />, text: "Resume", path: "resume.pdf" },
 ];
 
 const DownloadIcons = () => {
   return (
     <div className="download-icons">
       <Row gutter={50}>
-        {data.map((item) => (
+        {variants.map((item) => (
           <Col>
             <Tooltip title={item.text}>
-              <a className="download-icon" download href="logo192.png">
+              <a className="download-icon" download href={item.path}>
                 {item.icon}
               </a>
             </Tooltip>

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Row, Col, Typography, message } from "antd";
+import { Row, Col, Typography } from "antd";
 import Animate from "rc-animate";
 
 import TypedCode from "./TypedCode";
@@ -24,8 +24,6 @@ Christopher =
 const About = () => {
   const [finished, setFinished] = useState(false);
   const interrupt = useRef(false);
-
-  // const onFinish = () => setFinished(true);
 
   return (
     <section
@@ -55,9 +53,6 @@ const About = () => {
             interrupt={interrupt}
           />
         </Col>
-        {/* <Col push={2}>
-          <Quill />
-        </Col> */}
       </Row>
 
       <Animate transitionAppear transitionName="fade">

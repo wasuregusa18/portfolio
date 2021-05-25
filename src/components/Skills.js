@@ -1,19 +1,17 @@
 import React, { useState } from "react";
-import tableData from "../data/tableData.json";
 import { Tag, Table } from "antd";
-import entry2related from "../data/entry2related.json";
+
 import ProjectArray from "./ProjectsArray";
 import "./Skills.css";
-const { CheckableTag } = Tag;
 
-// should turn trableData in a function - so that it can use what is being highlighted?
+import tableData from "../data/tableData.json";
+import entry2related from "../data/entry2related.json";
+
+const { CheckableTag } = Tag;
 
 const SkillsTable = (props) => {
   const [isHighlighted, setHighlighted] = useState([]);
-
   const handleHover = (project) => {
-    console.log(project);
-    console.log(entry2related[project]);
     entry2related[project]
       ? setHighlighted(entry2related[project])
       : setHighlighted([]);
@@ -45,7 +43,6 @@ const SkillsTable = (props) => {
   return (
     <section id="skills">
       <ProjectArray handleHover={handleHover} {...props} />
-      {/* <ArrayKey /> */}
       <Table
         className="skills-table"
         dataSource={tableData}

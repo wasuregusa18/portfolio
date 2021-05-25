@@ -1,9 +1,6 @@
 /* eslint-disable no-fallthrough */
 import React, { useState } from "react";
-import "./Framework.css";
-import Contact from "./Contact";
-import { Layout, Menu, Breadcrumb, Typography } from "antd";
-
+import { Layout, Menu, Breadcrumb } from "antd";
 import {
   ContactsOutlined,
   DotChartOutlined,
@@ -11,19 +8,14 @@ import {
   MobileOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
-
 import { useHistory } from "react-router-dom";
+
+import Contact from "./Contact";
 import useUpdateTitle from "../hooks/updateTitle";
-
 import InkstoneIcon from "./InkstoneIcon";
+import "./Framework.css";
 
-const { Header, Content, Footer, Sider } = Layout;
-const { Title } = Typography;
-
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
+const { Content, Footer, Sider } = Layout;
 const menuItems = [
   {
     key: "home",
@@ -47,9 +39,10 @@ const menuItems = [
   },
   // { key: "404", icon: <WarningOutlined /> },
 ];
-
 const views = ["home", "about", "skills", "projects", "404"];
-
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 function findCurrentPage(path) {
   if (path === "/") return "home";
   else if (views.includes(path.slice(1))) return path.slice(1);
@@ -60,15 +53,9 @@ const Framework = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
   const history = useHistory();
-  // let currentPage = menuItems.find(
-  // (item) => item.key === history.location.pathname.slice(1)
-  // );
-  // currentPage = currentPage ? currentPage : menuItems[0]; //first render no history - also 404
-
   let currentPage = findCurrentPage(history.location.pathname);
   const titleString =
     currentPage === "home" ? "" : " - " + capitalize(currentPage);
-
   useUpdateTitle(`Christopher Huber${titleString}`);
 
   const breadcrumbData = [
@@ -79,7 +66,6 @@ const Framework = (props) => {
 
   const handleClick = (e) => {
     if (e.key === "contact") {
-      // props.setSelected((preVal) => [...preVal, e.key]);
       props.setModalVisible(true);
     } else {
       props.setSelected([e.key]);

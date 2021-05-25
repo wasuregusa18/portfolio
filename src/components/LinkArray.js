@@ -1,11 +1,10 @@
 import React from "react";
-import { Row, Col, Button } from "antd";
+import { Row, Col, Button, Tooltip } from "antd";
 import {
   LaptopOutlined,
   CameraOutlined,
   CodeOutlined,
 } from "@ant-design/icons";
-import { Tooltip } from "@material-ui/core";
 
 const LinkArray = ({ media, link, source }) => {
   function shouldShow(x) {
@@ -36,7 +35,6 @@ const LinkArray = ({ media, link, source }) => {
         console.log(toShow, title);
         const button = (
           <Button
-            // style={{ pointerEvents: "none" }}
             href={l}
             target="_blank"
             type="link"
@@ -49,7 +47,7 @@ const LinkArray = ({ media, link, source }) => {
         return (
           <Col>
             {!toShow && l ? (
-              <Tooltip title={title} position="top">
+              <Tooltip title={title} placement="bottom">
                 <span>{button}</span>
               </Tooltip>
             ) : (
@@ -58,11 +56,6 @@ const LinkArray = ({ media, link, source }) => {
           </Col>
         );
       })}
-      {/* <Col>
-        <Button type="link" icon={<CameraOutlined />}>
-          Media
-        </Button>
-      </Col> */}
     </Row>
   );
 };

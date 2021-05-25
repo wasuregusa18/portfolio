@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Carousel, Row, InputNumber } from "antd";
+import React, { useState, useRef } from "react";
+import { Carousel } from "antd";
 import { useIdleTimer } from "react-idle-timer";
 
 import ProjectSlide from "./ProjectSlide";
@@ -20,9 +20,8 @@ const Projects = (props) => {
     debounce: 500,
   });
 
-  // note this is not controlled - it just reflects the changes
+  // note this is not controlled - it is updated on change and then passed down to slides
   const [currentSlide, setSlide] = useState(props.carouselShowing);
-
   const slider = useRef();
   return (
     <div>
@@ -33,11 +32,9 @@ const Projects = (props) => {
         ref={(ref) => {
           slider.current = ref;
         }}
-        afterChange={() => {
-          // slider.current.innerSlider.adaptHeight();
-          // console.log(slider.current);
-          setSlide(slider.current.innerSlider.state.currentSlide);
-        }}
+        afterChange={() =>
+          setSlide(slider.current.innerSlider.state.currentSlide)
+        }
       >
         {ProjectData.map((project, index) => (
           <ProjectSlide

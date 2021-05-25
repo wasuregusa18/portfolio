@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
+import { Row, Col } from "antd";
+
 import TypedCode from "./TypedCode";
-import { Row, Col, Typography } from "antd";
 import "./NotFound.css";
 
 const codeToDisplay = `# Page Not Found
 raise ValueError`;
 
-const codeToDisplay2 = `#404
-if page is not_found:
-    raise NameError`;
+// const codeToDisplay2 = `#404
+// if page is not_found:
+//     raise NameError`;
 
 const NotFound = () => {
   const interrupt = useRef(false);

@@ -1,18 +1,8 @@
 import React from "react";
-import { Modal, Tooltip, Row, Col, Typography } from "antd";
-
-import {
-  MailOutlined,
-  GithubOutlined,
-  LinkedinOutlined,
-  MailFilled,
-  GithubFilled,
-  LinkedinFilled,
-} from "@ant-design/icons";
+import { Modal, Row, Col, Typography } from "antd";
+import { MailFilled, GithubFilled, LinkedinFilled } from "@ant-design/icons";
 
 const { Text } = Typography;
-
-// import { FaGithubAlt } from "react-icons/fa'";
 
 const variants = {
   email: {
@@ -24,13 +14,13 @@ const variants = {
   github: {
     icon: (props) => <GithubFilled style={{ color: "#000" }} {...props} />,
     tooltip: "Github",
-    link: "https://www.github.com",
+    link: "https://github.com/wasuregusa18",
     target: "_blank",
   },
   linkedin: {
     icon: (props) => <LinkedinFilled style={{ color: "#0077b5" }} {...props} />,
     tooltip: "LinkedIn",
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/christopher-huber-3681637b/",
     target: "_blank",
   },
 };
@@ -38,7 +28,6 @@ const variants = {
 function ContactIcon(props) {
   const variant = variants[props.variant];
   return (
-    // <Tooltip title={variant.tooltip} aria-label={variant.tooltip}>
     <>
       <a target={variant.target} rel="noreferrer" href={variant.link}>
         {variant["icon"]()}
@@ -49,12 +38,10 @@ function ContactIcon(props) {
         {variant.tooltip}
       </Text>
     </>
-    // </Tooltip>
   );
 }
 
 const Contact = ({ isModalVisible, handleModalExit }) => {
-  // const handleOk = ()=> setModalVisible(false)
   const icons = ["email", "github", "linkedin"];
   return (
     <Modal

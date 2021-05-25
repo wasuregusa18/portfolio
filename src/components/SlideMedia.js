@@ -10,23 +10,11 @@ const isImageFile = (filename) => {
 };
 
 const style = {
-  // height: "100%",
   margin: "auto",
-  // height: "250px",
-  // width: "250px",
-  // float: "right",
-  // margin: "auto",
-  // width: "auto",
-  // height: "100%",
-  // position: "relative",
-  // background: "white",
-  // zIndex: 100,
 };
-// const style = { margin: "auto", width: "300px", height: "300px" };
-// const style = { margin: "auto", height: "80%" };
 
 // media should be an array of image files or video files
-// need to be in public file for src to work
+// need to be in public folder for src to work
 const SlideMedia = ({ media }) => {
   const content = (props) =>
     media.map((filename) => {
