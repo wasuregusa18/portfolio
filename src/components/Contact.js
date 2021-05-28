@@ -8,7 +8,7 @@ const variants = {
   email: {
     icon: (props) => <MailFilled style={{ color: "#8e24aa" }} {...props} />,
     tooltip: "Email",
-    link: "mailto:www.wasuregusa18@gmail.com",
+    link: "mailto:wasuregusa18@gmail.com?subject=Connect",
     target: "_self",
   },
   github: {

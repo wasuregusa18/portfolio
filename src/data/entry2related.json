@@ -28,25 +28,31 @@
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
+    " Ant Design": [],
+    " ": [],
     "Flask": [
-        "Japanese Poetry Website",
-        "A Deck of Cards"
+        "Japanese Poetry Website"
     ],
     "Django": [
         "Document Generation Site"
     ],
-    "Express": [],
-    "SQLite": [
-        "Document Generation Site"
+    "Express": [
+        "A Deck of Cards"
     ],
     "MySQL": [
         "Japanese Poetry Database"
     ],
     "PostgreSQL": [
-        "Japanese Poetry Website",
+        "Japanese Poetry Website"
+    ],
+    "MongoDB": [
         "A Deck of Cards"
     ],
-    "MongoDB": [],
+    "SQLite": [
+        "Document Generation Site"
+    ],
+    "REST": [],
+    " GraphQL": [],
     "NumPy": [
         "Brand Strength Analysis"
     ],
@@ -61,9 +67,6 @@
     "SciPy": [
         "Brand Strength Analysis"
     ],
-    "Tensorflow": [
-        "Brand Strength Analysis"
-    ],
     "Jupyter": [
         "Brand Strength Analysis",
         "Annual Report Textual Analysis"
@@ -76,7 +79,6 @@
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
-    "Node.js": [],
     "Swift": [],
     "SQLAlchemy": [
         "Japanese Poetry Database",
@@ -91,6 +93,10 @@
     "NLTK": [
         "Annual Report Textual Analysis"
     ],
+    "Tensorflow": [
+        "Brand Strength Analysis"
+    ],
+    "PyTorch": [],
     "Brand Strength Analysis": [
         "Python",
         "NumPy",
@@ -136,8 +142,8 @@
     ],
     "A Deck of Cards": [
         "Python",
-        "Flask",
-        "PostgreSQL",
+        "Express",
+        "MongoDB",
         "React",
         "MaterialUI",
         "HTML",

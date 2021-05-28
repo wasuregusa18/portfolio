@@ -16,8 +16,10 @@ const style = {
 // media should be an array of image files or video files
 // need to be in public folder for src to work
 const SlideMedia = ({ media }) => {
+  // let mediaArray = media.split("-");
+  let mediaArray = [media]; //only using one currently
   const content = (props) =>
-    media.map((filename, index) => {
+    mediaArray.map((filename, index) => {
       if (isImageFile(filename))
         return (
           <Image

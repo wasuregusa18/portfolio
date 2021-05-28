@@ -1,6 +1,6 @@
 [
     {
-        "id": -567523093898807330,
+        "id": 540008364829573696,
         "area": "Frontend ",
         "tech": [
             "HTML",
@@ -9,11 +9,13 @@
             "JavaScript ES7",
             "JQuery",
             "React",
-            "MaterialUI"
+            "MaterialUI",
+            " Ant Design",
+            " "
         ]
     },
     {
-        "id": 8626021852532543827,
+        "id": -7331705843252424563,
         "area": "Backend",
         "tech": [
             "Flask",
@@ -22,38 +24,44 @@
         ]
     },
     {
-        "id": 1864034217496550615,
+        "id": -2904995752366729290,
         "area": "Databases",
         "tech": [
-            "SQLite",
             "MySQL",
             "PostgreSQL",
-            "MongoDB"
+            "MongoDB",
+            "SQLite"
         ]
     },
     {
-        "id": -1071065711885985054,
+        "id": -7391719797742020275,
+        "area": "API",
+        "tech": [
+            "REST",
+            " GraphQL"
+        ]
+    },
+    {
+        "id": 465848002252890738,
         "area": "Data Science ",
         "tech": [
             "NumPy",
             "Pandas",
             "Matplotlib",
             "SciPy",
-            "Tensorflow",
             "Jupyter"
         ]
     },
     {
-        "id": 857582918786406875,
+        "id": -8079504167348827665,
         "area": "Programming Languages",
         "tech": [
             "Python",
-            "Node.js",
             "Swift"
         ]
     },
     {
-        "id": 8080928161716189862,
+        "id": 6040013856623450350,
         "area": "Python Packages",
         "tech": [
             "SQLAlchemy",
@@ -61,6 +69,14 @@
             "Scrapy",
             "TkInter",
             "NLTK"
+        ]
+    },
+    {
+        "id": -145990068354457249,
+        "area": "Machine Learning",
+        "tech": [
+            "Tensorflow",
+            "PyTorch"
         ]
     }
 ]

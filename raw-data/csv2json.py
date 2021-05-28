@@ -4,18 +4,15 @@ from collections import defaultdict
 
 
 project_data_path = "ProjectData.csv"
-tech_path = "Technologies.csv"
 project_data = pandas.read_csv(project_data_path)
-tech_data = pandas.read_csv(tech_path, index_col=0, header=None)
-
-
 project_data = project_data.dropna(axis=0, how="any", thresh=4)
+
+tech_path = "Technologies.csv"
+tech_data = pandas.read_csv(tech_path, index_col=0, header=None)
 
 
 # required jsons
 project_data_dict = project_data.to_dict(orient="records")
-
-
 project_name2techs = {}
 grouping2projects = defaultdict(lambda: [])
 tech_data_dict = tech_data.T.to_dict(orient="list")
@@ -30,7 +27,8 @@ for (k, v) in tech_data_dict.items():
         "tech": non_nan_vals
     }
     tableData.append(newEntry)
-project2grouping = {}  # also ant
+
+project2grouping = {}
 project2index = {}
 
 

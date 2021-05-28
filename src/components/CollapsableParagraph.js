@@ -24,7 +24,7 @@ const CollapsableParagraph = ({ text, settings }) => {
         {text}
         {expanded && (
           <button className="close-expanded" onClick={onClose}>
-            Close
+            Collapse
           </button>
         )}
       </Paragraph>
