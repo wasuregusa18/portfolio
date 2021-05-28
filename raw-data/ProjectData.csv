@@ -31,4 +31,9 @@ Build API Endpoints
 Build client-facing HTML endpoints
 Design and Implement React Frontend 
 Style the website with MaterialUI ",Python-Flask-PostgreSQL-React-MaterialUI-HTML-CSS-JavaScript ES7-SQLAlchemy,waka.mp4,https://github.com/wasuregusa18/waka,http://waka-stage.herokuapp.com/,Web Development
-5,A Deck of Cards,Build a website that allows users to play any card game in existence (virtual deck of cards),"Design: players input basic constraint set (e.g. num of players, starting set up, turn-based or not etc…). They can save these rules under a name of their choice. Disagreements over game rules are settled by majority vote. Ultimately, the ambition is to have a machine learning algorithm on the backend learn the rules of the game from watching people play. Once the algorithm gains confidence, it will start enforcing the rules (e.g. turn end on played card, preempt mistaken card, register end of game, etc…). In this way, players will program the website to learn their game. ",In Development,Python-Express-MongoDB-React-MaterialUI-HTML-CSS-JavaScript ES7-SQLAlchemy,,UD,UD,Web Development
+5,A Deck of Cards,Build a website that allows users to play any card game in existence (virtual deck of cards),"Design: players input basic constraint set (e.g. num of players, starting set up, turn-based or not etc…). They can save these rules under a name of their choice. Disagreements over game rules are settled by majority vote. Ultimately, the ambition is to have a machine learning algorithm on the backend learn the rules of the game from watching people play. Once the algorithm gains confidence, it will start enforcing the rules (e.g. turn end on played card, preempt mistaken card, register end of game, etc…). In this way, players will program the website to learn their game. ","Design Machine Learning Architecture,
+Proof of concept on one game (bridge)
+Build Backend
+Build UI
+Expand to other trick taking games
+Expand to all games",Python-Express-MongoDB-React-MaterialUI-HTML-CSS-JavaScript ES7-SQLAlchemy,,UD,UD,Web Development
