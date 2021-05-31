@@ -14,7 +14,7 @@ const LinkArray = ({ media, link, source }) => {
       case "UD":
         return [false, "Under Development"];
       case null:
-        return [false, ""];
+        return [false, "skip"];
       case undefined:
         return [false, ""];
       default:
@@ -31,6 +31,7 @@ const LinkArray = ({ media, link, source }) => {
     <Row justify="space-around" gutter={12} style={{ fontSize: "x-large" }}>
       {links.slice(1).map((l, i) => {
         let [toShow, title] = shouldShow(l);
+        if (title === "skip") return;
         const button = (
           <Button
             href={l}
