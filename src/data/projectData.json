@@ -102,7 +102,7 @@
         "name": "A Deck of Cards",
         "objective": "Build a website that allows users to play any card game in existence (virtual deck of cards)",
         "implementation": "Design: players input basic constraint set (e.g. num of players, starting set up, turn-based or not etc\u2026). They can save these rules under a name of their choice. Disagreements over game rules are settled by majority vote. Ultimately, the ambition is to have a machine learning algorithm on the backend learn the rules of the game from watching people play. Once the algorithm gains confidence, it will start enforcing the rules (e.g. turn end on played card, preempt mistaken card, register end of game, etc\u2026). In this way, players will program the website to learn their game. ",
-        "methodology": "In Development",
+        "methodology": "Design Machine Learning Architecture,\nProof of concept on one game (bridge)\nBuild Backend\nBuild UI\nExpand to other trick taking games\nExpand to all games",
         "tech": [
             "Python",
             "Express",
