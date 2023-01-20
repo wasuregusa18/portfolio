@@ -9,27 +9,19 @@
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
-    "Bootstrap": [
-        "Document Generation Site"
-    ],
     "JavaScript ES7": [
         "Document Generation Site",
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
-    "JQuery": [
-        "Document Generation Site"
-    ],
     "React": [
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
-    "MaterialUI": [
-        "Japanese Poetry Website",
-        "A Deck of Cards"
+    "Redux": [],
+    "JQuery": [
+        "Document Generation Site"
     ],
-    " Ant Design": [],
-    " ": [],
     "Flask": [
         "Japanese Poetry Website"
     ],
@@ -48,9 +40,8 @@
     "MongoDB": [
         "A Deck of Cards"
     ],
-    "SQLite": [
-        "Document Generation Site"
-    ],
+    "Elasticsearch": [],
+    "Redis": [],
     "REST": [],
     " GraphQL": [],
     "NumPy": [
@@ -79,24 +70,15 @@
         "Japanese Poetry Website",
         "A Deck of Cards"
     ],
+    "TypeScript": [],
     "Swift": [],
-    "SQLAlchemy": [
-        "Japanese Poetry Database",
-        "Japanese Poetry Website",
-        "A Deck of Cards"
-    ],
-    "Selenium": [],
-    "Scrapy": [
-        "Japanese Poetry Database"
-    ],
-    "TkInter": [],
-    "NLTK": [
-        "Annual Report Textual Analysis"
-    ],
     "Tensorflow": [
         "Brand Strength Analysis"
     ],
     "PyTorch": [],
+    "AWS": [],
+    "CDK": [],
+    "Docker": [],
     "Brand Strength Analysis": [
         "Python",
         "NumPy",
@@ -110,22 +92,17 @@
         "Python",
         "Pandas",
         "Matplotlib",
-        "NLTK",
         "Jupyter"
     ],
     "Japanese Poetry Database": [
         "Python",
-        "Scrapy",
-        "MySQL",
-        "SQLAlchemy"
+        "MySQL"
     ],
     "Document Generation Site": [
         "Python",
         "Django",
-        "SQLite",
         "HTML",
         "CSS",
-        "Bootstrap",
         "JavaScript ES7",
         "JQuery"
     ],
@@ -134,21 +111,17 @@
         "Flask",
         "PostgreSQL",
         "React",
-        "MaterialUI",
         "HTML",
         "CSS",
-        "JavaScript ES7",
-        "SQLAlchemy"
+        "JavaScript ES7"
     ],
     "A Deck of Cards": [
         "Python",
         "Express",
         "MongoDB",
         "React",
-        "MaterialUI",
         "HTML",
         "CSS",
-        "JavaScript ES7",
-        "SQLAlchemy"
+        "JavaScript ES7"
     ]
 }

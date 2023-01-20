@@ -1,21 +1,18 @@
 [
     {
-        "id": 2699297133911293516,
-        "area": "Frontend ",
+        "id": -517526233769292866,
+        "area": "Frontend",
         "tech": [
             "HTML",
             "CSS",
-            "Bootstrap",
             "JavaScript ES7",
-            "JQuery",
             "React",
-            "MaterialUI",
-            " Ant Design",
-            " "
+            "Redux",
+            "JQuery"
         ]
     },
     {
-        "id": -773383512211070250,
+        "id": -9215662888573497568,
         "area": "Backend",
         "tech": [
             "Flask",
@@ -24,17 +21,18 @@
         ]
     },
     {
-        "id": 1641745426501363648,
+        "id": 5623133658532758795,
         "area": "Databases",
         "tech": [
             "MySQL",
             "PostgreSQL",
             "MongoDB",
-            "SQLite"
+            "Elasticsearch",
+            "Redis"
         ]
     },
     {
-        "id": -6974132633648193887,
+        "id": 2185170609839343930,
         "area": "API",
         "tech": [
             "REST",
@@ -42,7 +40,7 @@
         ]
     },
     {
-        "id": 7863224379015858858,
+        "id": -5118911185633406638,
         "area": "Data Science ",
         "tech": [
             "NumPy",
@@ -53,30 +51,29 @@
         ]
     },
     {
-        "id": -6366943873591693867,
+        "id": 8912224509241424647,
         "area": "Programming Languages",
         "tech": [
             "Python",
+            "TypeScript",
             "Swift"
         ]
     },
     {
-        "id": -1613621891732207120,
-        "area": "Python Packages",
-        "tech": [
-            "SQLAlchemy",
-            "Selenium",
-            "Scrapy",
-            "TkInter",
-            "NLTK"
-        ]
-    },
-    {
-        "id": -6472665051381272136,
+        "id": 3452267385042263321,
         "area": "Machine Learning",
         "tech": [
             "Tensorflow",
             "PyTorch"
+        ]
+    },
+    {
+        "id": -8876727526089976127,
+        "area": "Cloud",
+        "tech": [
+            "AWS",
+            "CDK",
+            "Docker"
         ]
     }
 ]
