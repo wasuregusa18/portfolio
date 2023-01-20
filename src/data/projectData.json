@@ -29,7 +29,6 @@
             "Python",
             "Pandas",
             "Matplotlib",
-            "NLTK",
             "Jupyter"
         ],
         "media": null,
@@ -45,9 +44,7 @@
         "methodology": "Design database schema \nIdentify target websites\nBuild spiders to crawl those sites\nClean and standardize recovered data\nCommit the cleaned data into database",
         "tech": [
             "Python",
-            "Scrapy",
-            "MySQL",
-            "SQLAlchemy"
+            "MySQL"
         ],
         "media": null,
         "source": "https://github.com/wasuregusa18/waka-scrapy",
@@ -63,10 +60,8 @@
         "tech": [
             "Python",
             "Django",
-            "SQLite",
             "HTML",
             "CSS",
-            "Bootstrap",
             "JavaScript ES7",
             "JQuery"
         ],
@@ -86,11 +81,9 @@
             "Flask",
             "PostgreSQL",
             "React",
-            "MaterialUI",
             "HTML",
             "CSS",
-            "JavaScript ES7",
-            "SQLAlchemy"
+            "JavaScript ES7"
         ],
         "media": "waka.mp4",
         "source": "https://github.com/wasuregusa18/waka",
@@ -108,11 +101,9 @@
             "Express",
             "MongoDB",
             "React",
-            "MaterialUI",
             "HTML",
             "CSS",
-            "JavaScript ES7",
-            "SQLAlchemy"
+            "JavaScript ES7"
         ],
         "media": null,
         "source": "UD",

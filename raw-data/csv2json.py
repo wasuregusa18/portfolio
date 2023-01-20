@@ -1,11 +1,11 @@
-import simplejson
-import pandas
 from collections import defaultdict
 
+import pandas
+import simplejson
 
 project_data_path = "ProjectData.csv"
 project_data = pandas.read_csv(project_data_path)
-project_data = project_data.dropna(axis=0, how="any", thresh=4)
+project_data = project_data.dropna(axis=0, thresh=4)
 
 tech_path = "Technologies.csv"
 tech_data = pandas.read_csv(tech_path, index_col=0, header=None)
@@ -21,11 +21,7 @@ tech_data_dict = tech_data.T.to_dict(orient="list")
 tableData = []
 for (k, v) in tech_data_dict.items():
     non_nan_vals = [i for i in v if i == i]
-    newEntry = {
-        "id": hash(k),
-        "area": k,
-        "tech": non_nan_vals
-    }
+    newEntry = {"id": hash(k), "area": k, "tech": non_nan_vals}
     tableData.append(newEntry)
 
 project2grouping = {}
@@ -37,8 +33,10 @@ for v in tech_data_dict.values():
     for i in v:
         all_tech.append(i)
 entry2related = {i: [] for i in all_tech if i == i}
-tech_data_dict = {k: [{"id": hash(i), "name": i} for i in v if i == i] for (
-    k, v) in tech_data_dict.items()}
+tech_data_dict = {
+    k: [{"id": hash(i), "name": i} for i in v if i == i]
+    for (k, v) in tech_data_dict.items()
+}
 
 for index, project in enumerate(project_data_dict):
 
@@ -52,8 +50,7 @@ for index, project in enumerate(project_data_dict):
     project2index[project["name"]] = index
 
     project_name2techs[name] = techs
-    grouping2projects[grouping].append({"id": project["id"],
-                                        "name": name})
+    grouping2projects[grouping].append({"id": project["id"], "name": name})
 
     entry2related[name] = techs
     for tech in techs:
@@ -70,8 +67,7 @@ file_names = [
     "grouping2techs.json",
     "tableData.json",
     "project2grouping.json",
-    "project2index.json"
-
+    "project2index.json",
 ]
 
 data = [
@@ -83,7 +79,7 @@ data = [
     tech_data_dict,
     tableData,
     project2grouping,
-    project2index
+    project2index,
 ]
 
 for fn, d in zip(file_names, data):
