@@ -12,22 +12,17 @@
         "Python",
         "Pandas",
         "Matplotlib",
-        "NLTK",
         "Jupyter"
     ],
     "Japanese Poetry Database": [
         "Python",
-        "Scrapy",
-        "MySQL",
-        "SQLAlchemy"
+        "MySQL"
     ],
     "Document Generation Site": [
         "Python",
         "Django",
-        "SQLite",
         "HTML",
         "CSS",
-        "Bootstrap",
         "JavaScript ES7",
         "JQuery"
     ],
@@ -36,21 +31,17 @@
         "Flask",
         "PostgreSQL",
         "React",
-        "MaterialUI",
         "HTML",
         "CSS",
-        "JavaScript ES7",
-        "SQLAlchemy"
+        "JavaScript ES7"
     ],
     "A Deck of Cards": [
         "Python",
         "Express",
         "MongoDB",
         "React",
-        "MaterialUI",
         "HTML",
         "CSS",
-        "JavaScript ES7",
-        "SQLAlchemy"
+        "JavaScript ES7"
     ]
 }
